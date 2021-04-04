@@ -1,0 +1,21 @@
+.profile-video-container{
+    display: grid;
+    grid-template-columns: repeat(2,40%);
+    justify-content: center;
+    grid-gap : 12px;
+}
+
+#myVideo-img {
+    width: 80%;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .profile-video-container{
+        grid-template-columns: repeat(1,90%);
+    }
+    
+    #myVideo-img {
+        width: 60%;
+    }
+}

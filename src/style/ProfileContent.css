@@ -1,0 +1,32 @@
+.profile-content-title {
+    display : grid;
+    grid-template-columns: repeat(3,15%);
+}
+
+
+.btn-title {
+    border: 0px;
+    background: rgb(246, 246, 250);
+    transition: all ease-in-out .1s;
+    border-bottom: rgb(246, 246, 250) 3px solid;
+    color: rgba(208, 201, 214, 1);
+
+}
+
+@media only screen and (max-width: 767px) and (min-width : 401px) {
+
+    .profile-content-title {
+        grid-template-columns: repeat(3,20%);
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .profile-content-title {
+        grid-template-columns: repeat(3,30%);
+        justify-content: center;
+    }
+
+}

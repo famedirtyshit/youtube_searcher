@@ -1,0 +1,21 @@
+.profile-playlist-container{
+    display: grid;
+    grid-template-columns: repeat(2,40%);
+    justify-content: center;
+    grid-gap : 12px;
+}
+
+#myPlayList-img {
+    width: 80%;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .profile-playlist-container{
+        grid-template-columns: repeat(1,90%);
+    }
+    
+    #myPlayList-img {
+        width: 60%;
+    }
+}

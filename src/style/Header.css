@@ -1,0 +1,124 @@
+#search-icon {
+    left: 18px!important;
+    top: 5px!important;
+    font-size: 25px;
+}
+
+#search-bar{
+ width: 70%;
+}
+
+#navbar {
+    width: 100%;
+}
+
+#profile-bar {
+    width : 30%
+}
+
+#navbarDropdown {
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+#clear-icon {
+    font-size: 24px;
+    top: 5px!important;
+    right : 10px!important;
+    cursor: pointer;
+}
+
+#clear-icon:hover{
+    font-size: 27px;
+    color: rgb(230, 46, 46);
+    transition: all ease-in-out .5s;
+}
+
+#header-mobile {
+    display : none
+}
+
+@media only screen and (max-width: 767px) {
+    #header-desktop {
+      display: none;
+    }
+
+    #header-mobile {
+        display : block
+    }
+
+    #video-detail-container {
+        margin-top: 0!important;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+
+    #header-dropdown-mobile{
+        left: -60%!important;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+
+    #header-dropdown-mobile{
+        left: -70%!important;
+    }
+
+}
+@media only screen and (max-width: 550px) {
+
+    #header-dropdown-mobile{
+        left: -80%!important;
+    }
+
+}
+@media only screen and (max-width: 500px) {
+
+    #header-dropdown-mobile{
+        left: -90%!important;
+    }
+
+}
+@media only screen and (max-width: 450px) {
+
+    #header-dropdown-mobile{
+        left: -100%!important;
+    }
+
+}
+@media only screen and (max-width: 400px) {
+
+    #header-dropdown-mobile{
+        left: -110%!important;
+    }
+
+}
+@media only screen and (max-width: 350px) {
+
+    #header-dropdown-mobile{
+        left: -150%!important;
+    }
+
+}
+@media only screen and (max-width: 300px) {
+
+    #header-dropdown-mobile{
+        left: -185%!important;
+    }
+
+}
+@media only screen and (max-width: 250px) {
+
+    #header-dropdown-mobile{
+        left: -250%!important;
+    }
+
+}
+@media only screen and (max-width: 200px) {
+
+    #header-dropdown-mobile{
+        left: -300%!important;
+    }
+
+}
