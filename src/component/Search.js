@@ -5,7 +5,6 @@ import VideoDetail from './VideoDetail';
 import Profile from './Profile';
 import LoadingPage from './LoadingPage';
 import {
-    BrowserRouter as Router,
     Route,
     Switch
 } from "react-router-dom";
@@ -17,7 +16,6 @@ function Search(prop) {
 
     return (
         <React.Fragment>
-            <Router>
                 <Switch>
                     <Route exact path='/'>
                         <Header setSearchResult={setSearchResult} setSearchStatus={setSearchStatus} setQuery={setQuery} oAuth={prop.oAuth} setOAuth={prop.setOAuth}
@@ -33,7 +31,6 @@ function Search(prop) {
                         {prop.user && prop.oAuth && prop.setUser?<Profile user={prop.user} oAuth={prop.oAuth} setUser={prop.setUser}/>:<LoadingPage checkSignIn={true}/>}
                     </Route>
                 </Switch>
-            </Router>
         </React.Fragment>
     )
 

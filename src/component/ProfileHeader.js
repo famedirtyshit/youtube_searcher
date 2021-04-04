@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import '../style/ProfileHeader.css';
+import {Link} from 'react-router-dom';
 
 function ProfileHeader(prop) {
 
@@ -26,7 +27,7 @@ function ProfileHeader(prop) {
             )
             resultHtmlTag.push(
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown" id='header-profile-dropdown' style={{ width : '10%'}}>
-                    <li><a className="dropdown-item text-center" href="/">Back to search</a></li>
+                    <li><Link className="dropdown-item text-center" to="/">Back to search</Link></li>
                     <li><hr className="dropdown-divider" /></li>
                     <li><button className="dropdown-item text-center" onClick={() => { signOut(prop.oAuth) }}>Logout</button></li>
                 </ul>
@@ -44,7 +45,7 @@ function ProfileHeader(prop) {
             )
             resultHtmlTag.push(
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown" id='header-profile-dropdown' style={{width : '10%'}}>
-                    <li><a className="dropdown-item text-center" href="/">Back to search</a></li>
+                    <li><Link className="dropdown-item text-center" to="/">Back to search</Link></li>
                     <li><hr className="dropdown-divider" /></li>
                     <li><button className="dropdown-item text-center" onClick={() => { signOut(prop.oAuth) }}>Logout</button></li>
                 </ul>

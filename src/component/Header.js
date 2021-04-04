@@ -1,5 +1,6 @@
 import React from 'react';
 import '../style/Header.css'
+import {Link} from 'react-router-dom';
 
 
 function Header(prop) {
@@ -92,7 +93,7 @@ function Header(prop) {
                 )
                 resultHtmlTag.push(
                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown" style={{ left: '25%' }}>
-                        <li><a className="dropdown-item text-center" href="/profile">Profile</a></li>
+                        <li><Link className="dropdown-item text-center" to="/profile">Profile</Link></li>
                         <li><hr className="dropdown-divider" /></li>
                         <li><button className="dropdown-item text-center" onClick={() => { signOut(prop.oAuth) }}>Logout</button></li>
                     </ul>
@@ -110,7 +111,7 @@ function Header(prop) {
                 )
                 resultHtmlTag.push(
                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown" style={{ left: '25%' }}>
-                        <li><a className="dropdown-item text-center" href="/profile">Profile</a></li>
+                        <li><Link className="dropdown-item text-center" to="/profile">Profile</Link></li>
                         <li><hr className="dropdown-divider" /></li>
                         <li><button className="dropdown-item text-center" onClick={() => { signOut(prop.oAuth) }}>Logout</button></li>
                     </ul>
@@ -145,7 +146,7 @@ function Header(prop) {
                         <img className=" dropdown-toggle img-fluid" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false" src={window.location.origin + '/youtube-logo.png'} style={{ width: '20%' }} />
                         <ul className="dropdown-menu" aria-labelledby="navbarDropdown" id='header-dropdown-mobile' style={{ left: '-50%' }}>
-                            <li><a className="dropdown-item text-center" href="/profile">Profile</a></li>
+                            <li><Link className="dropdown-item text-center" to="/profile">Profile</Link></li>
                             <li><hr className="dropdown-divider" /></li>
                             <li><button className="dropdown-item text-center" onClick={() => { signOut(prop.oAuth) }}>Logout</button></li>
                         </ul>
@@ -163,7 +164,7 @@ function Header(prop) {
                         <img className=" dropdown-toggle img-fluid" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false" src={prop.user.items[0].snippet.thumbnails.high.url} style={{ width: '20%' }} />
                         <ul className="dropdown-menu" aria-labelledby="navbarDropdown" id='header-dropdown-mobile' style={{ left: '-50%' }}>
-                            <li><a className="dropdown-item text-center" href="/profile">Profile</a></li>
+                            <li><Link className="dropdown-item text-center" to="/profile">Profile</Link></li>
                             <li><hr className="dropdown-divider" /></li>
                             <li><button className="dropdown-item text-center" onClick={() => { signOut(prop.oAuth) }}>Logout</button></li>
                         </ul>

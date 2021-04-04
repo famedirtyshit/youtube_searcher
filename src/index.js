@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import PreLoad from './component/PreLoad';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
-    <PreLoad />
+    <Router>
+      <PreLoad />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
